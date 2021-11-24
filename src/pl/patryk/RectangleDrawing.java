@@ -8,6 +8,7 @@ import java.awt.*;
  */
 public class RectangleDrawing extends JComponent {
 
+    @Override
     public void paintComponent(Graphics g){
         g.setColor(Color.green);
         g.drawRect(0,0,99,99);

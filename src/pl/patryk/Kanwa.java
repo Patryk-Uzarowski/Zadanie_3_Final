@@ -9,10 +9,10 @@ import java.awt.event.*;
  */
 public class Kanwa extends JPanel {
 
-    RectangleDrawing rectangle = new RectangleDrawing();
-    CircleDrawing circle = new CircleDrawing();
-    int mousePosX;
-    int mousePosY;
+    private final RectangleDrawing rectangle = new RectangleDrawing();
+    private final CircleDrawing circle = new CircleDrawing();
+    private int mousePosX;
+    private int mousePosY;
 
     /*
         W konstruktorze klasy definiujemy całą zawartość okna umożliwiającą rysowanie kształtów. Został tutaj zaimplementowany interfejs

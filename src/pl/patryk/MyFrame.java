@@ -10,10 +10,7 @@ import java.util.Random;
 
 public class MyFrame extends JFrame {
 
-    JPanel mainPanel;
-    JButton buttonRun;
-    JButton button2;
-    Kanwa panelKanwy;
+    private JButton buttonRun;
 
 
     public MyFrame(){
@@ -21,7 +18,7 @@ public class MyFrame extends JFrame {
         this.setSize(500,500);
         this.setLayout(null);
 
-        panelKanwy = new Kanwa();
+        Kanwa panelKanwy = new Kanwa();
         this.add(panelKanwy);
         addJPanel();
         this.setVisible(true);
@@ -44,11 +41,11 @@ public class MyFrame extends JFrame {
      */
 
     private void addJPanel(){
-        mainPanel = new JPanel();
+        JPanel mainPanel = new JPanel();
         mainPanel.setBounds(0,300,500,200); // JPanel - 500 na 200
         mainPanel.setLayout(null);
         buttonRun = new JButton("Run");
-        button2 = new JButton("Cancel");
+        JButton button2 = new JButton("Cancel");
         buttonRun.setBounds(0,120,90,40);
         button2.setBounds(400,120,80,40);
         button2.addActionListener(new ActionListener() {
