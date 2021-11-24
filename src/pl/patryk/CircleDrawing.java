@@ -12,7 +12,7 @@ public class CircleDrawing extends JComponent {
     @Override
     public void paintComponent(Graphics g){
         g.setColor(Color.red);
-        g.drawOval(0,0,100,100);
+        g.drawOval(0,0,99,99);
     }
 
     public void changePosition(int x, int y){
